@@ -11,7 +11,8 @@ That being said, feel free to reference them as you need to. It's not _that_ com
 
 ## System
 
-| Layer |  |
+| Layer | Name |
+| ----- | ---- |
 | Operating System | Void Linux |
 | Window Manager   | Hyprland (Wayland) |
 | "Bars"           | Noctalia |
