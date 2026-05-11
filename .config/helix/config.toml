@@ -1,0 +1,76 @@
+#theme = "base16_default_dark"
+# theme = "jetbrains_dark"
+theme = "starfighter"
+
+[editor]
+line-number = "absolute"
+mouse = true
+color-modes = true
+insert-final-newline = true
+bufferline = "multiple"
+end-of-line-diagnostics = "hint"
+atomic-save = false # Re-enable if saving gets weird
+
+[editor.gutters]
+layout = ["spacer", "diagnostics", "line-numbers", "diff", "spacer"]
+
+[editor.gutters.line-numbers]
+min-width = 2
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "file-name", "file-modification-indicator", "spacer", "diagnostics"]
+right = ["version-control", "spacer", "selections", "position"]
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
+
+[editor.lsp]
+display-messages = true
+
+[editor.indent-guides]
+render = true
+
+[keys.normal]
+# Unselect downward lines with x
+"X" = "select_line_above"
+
+# Select lines above with x
+"A-x" = "extend_line_above"
+
+# Swap line positions
+"S-up" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+"S-down" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+"C-S-left" = ":buffer-previous"
+"C-S-right" = ":buffer-next"
+"C-x" = ":buffer-close"
+
+[keys.normal.space]
+# "F" = "file_picker_in_current_buffer_directory"
+"F" = [
+	':sh rm -f /tmp/unique-ca1ea106',
+	':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/unique-ca1ea106',
+	':sh printf "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+	':open %sh{cat /tmp/unique-ca1ea106}',
+	':redraw',
+	':set mouse false',
+  ':set mouse true',
+]
+
+[keys.select]
+"X" = "extend_line_above"
+
+[keys.insert]
+"C-s" = ":w"
+
+[keys.insert.C-k]
+b = "kill_to_line_start"
+e = "kill_to_line_end"
+a = ["kill_to_line_start", "kill_to_line_end"]

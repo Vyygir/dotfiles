@@ -1,0 +1,6 @@
+inherits = "autumn"
+
+"ui.statusline.normal" = { bg = "green", fg = "gray" }
+"ui.statusline.insert" = { bg = "blue", fg = "gray" }
+"ui.statusline.select" = { bg = "yellow", fg = "gray" }
+"ui.virtual.indent-guide" = { fg = "#3a3a3a" }

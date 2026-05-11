@@ -1,0 +1,17 @@
+{
+  "hideInactive": false,
+  "iconColor": "secondary",
+  "directory": "",
+  "filenamePattern": "recording_yyyyMMdd_HHmmss",
+  "frameRate": "60",
+  "audioCodec": "opus",
+  "videoCodec": "h264",
+  "quality": "ultra",
+  "colorRange": "full",
+  "showCursor": true,
+  "copyToClipboard": false,
+  "audioSource": "default_output",
+  "videoSource": "screen",
+  "resolution": "original",
+  "customFrameRate": "60"
+}

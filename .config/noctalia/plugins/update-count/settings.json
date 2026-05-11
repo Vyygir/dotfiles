@@ -1,0 +1,8 @@
+{
+  "updateIntervalMinutes": 300,
+  "updateTerminalCommand": "kitty -e",
+  "currentIconName": "world-download",
+  "hideOnZero": false,
+  "customCmdGetNumUpdates": "xbps-install --memory-sync --dry-run | grep -cFe update -e install",
+  "customCmdDoSystemUpdate": "xbps-install -Sy"
+}
